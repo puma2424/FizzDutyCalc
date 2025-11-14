@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		9AA6C3AF2EC79CE000673586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6C3942EC79CDE00673586 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AA6C39B2EC79CDE00673586;
+			remoteInfo = FizzDutyCalc;
+		};
+		9AA6C3B92EC79CE000673586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6C3942EC79CDE00673586 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AA6C39B2EC79CDE00673586;
+			remoteInfo = FizzDutyCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9AA6C39C2EC79CDE00673586 /* FizzDutyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzDutyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA6C3AE2EC79CE000673586 /* FizzDutyCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzDutyCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA6C3B82EC79CE000673586 /* FizzDutyCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzDutyCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9AA6C39E2EC79CDE00673586 /* FizzDutyCalc */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FizzDutyCalc;
+			sourceTree = "<group>";
+		};
+		9AA6C3B12EC79CE000673586 /* FizzDutyCalcTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FizzDutyCalcTests;
+			sourceTree = "<group>";
+		};
+		9AA6C3BB2EC79CE000673586 /* FizzDutyCalcUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FizzDutyCalcUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AA6C3992EC79CDE00673586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA6C3AB2EC79CE000673586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA6C3B52EC79CE000673586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AA6C3932EC79CDE00673586 = {
+			isa = PBXGroup;
+			children = (
+				9AA6C39E2EC79CDE00673586 /* FizzDutyCalc */,
+				9AA6C3B12EC79CE000673586 /* FizzDutyCalcTests */,
+				9AA6C3BB2EC79CE000673586 /* FizzDutyCalcUITests */,
+				9AA6C39D2EC79CDE00673586 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AA6C39D2EC79CDE00673586 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6C39C2EC79CDE00673586 /* FizzDutyCalc.app */,
+				9AA6C3AE2EC79CE000673586 /* FizzDutyCalcTests.xctest */,
+				9AA6C3B82EC79CE000673586 /* FizzDutyCalcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AA6C39B2EC79CDE00673586 /* FizzDutyCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AA6C3C22EC79CE000673586 /* Build configuration list for PBXNativeTarget "FizzDutyCalc" */;
+			buildPhases = (
+				9AA6C3982EC79CDE00673586 /* Sources */,
+				9AA6C3992EC79CDE00673586 /* Frameworks */,
+				9AA6C39A2EC79CDE00673586 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9AA6C39E2EC79CDE00673586 /* FizzDutyCalc */,
+			);
+			name = FizzDutyCalc;
+			packageProductDependencies = (
+			);
+			productName = FizzDutyCalc;
+			productReference = 9AA6C39C2EC79CDE00673586 /* FizzDutyCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AA6C3AD2EC79CE000673586 /* FizzDutyCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AA6C3C52EC79CE000673586 /* Build configuration list for PBXNativeTarget "FizzDutyCalcTests" */;
+			buildPhases = (
+				9AA6C3AA2EC79CE000673586 /* Sources */,
+				9AA6C3AB2EC79CE000673586 /* Frameworks */,
+				9AA6C3AC2EC79CE000673586 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AA6C3B02EC79CE000673586 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9AA6C3B12EC79CE000673586 /* FizzDutyCalcTests */,
+			);
+			name = FizzDutyCalcTests;
+			packageProductDependencies = (
+			);
+			productName = FizzDutyCalcTests;
+			productReference = 9AA6C3AE2EC79CE000673586 /* FizzDutyCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AA6C3B72EC79CE000673586 /* FizzDutyCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AA6C3C82EC79CE000673586 /* Build configuration list for PBXNativeTarget "FizzDutyCalcUITests" */;
+			buildPhases = (
+				9AA6C3B42EC79CE000673586 /* Sources */,
+				9AA6C3B52EC79CE000673586 /* Frameworks */,
+				9AA6C3B62EC79CE000673586 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AA6C3BA2EC79CE000673586 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9AA6C3BB2EC79CE000673586 /* FizzDutyCalcUITests */,
+			);
+			name = FizzDutyCalcUITests;
+			packageProductDependencies = (
+			);
+			productName = FizzDutyCalcUITests;
+			productReference = 9AA6C3B82EC79CE000673586 /* FizzDutyCalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AA6C3942EC79CDE00673586 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					9AA6C39B2EC79CDE00673586 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					9AA6C3AD2EC79CE000673586 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9AA6C39B2EC79CDE00673586;
+					};
+					9AA6C3B72EC79CE000673586 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9AA6C39B2EC79CDE00673586;
+					};
+				};
+			};
+			buildConfigurationList = 9AA6C3972EC79CDE00673586 /* Build configuration list for PBXProject "FizzDutyCalc" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AA6C3932EC79CDE00673586;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9AA6C39D2EC79CDE00673586 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AA6C39B2EC79CDE00673586 /* FizzDutyCalc */,
+				9AA6C3AD2EC79CE000673586 /* FizzDutyCalcTests */,
+				9AA6C3B72EC79CE000673586 /* FizzDutyCalcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AA6C39A2EC79CDE00673586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA6C3AC2EC79CE000673586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA6C3B62EC79CE000673586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AA6C3982EC79CDE00673586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA6C3AA2EC79CE000673586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA6C3B42EC79CE000673586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AA6C3B02EC79CE000673586 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AA6C39B2EC79CDE00673586 /* FizzDutyCalc */;
+			targetProxy = 9AA6C3AF2EC79CE000673586 /* PBXContainerItemProxy */;
+		};
+		9AA6C3BA2EC79CE000673586 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AA6C39B2EC79CDE00673586 /* FizzDutyCalc */;
+			targetProxy = 9AA6C3B92EC79CE000673586 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9AA6C3C02EC79CE000673586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AA6C3C12EC79CE000673586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AA6C3C32EC79CE000673586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FizzDutyCalc/Preview Content\"";
+				DEVELOPMENT_TEAM = FP8RB3BHVD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yu.FizzDutyCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AA6C3C42EC79CE000673586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FizzDutyCalc/Preview Content\"";
+				DEVELOPMENT_TEAM = FP8RB3BHVD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yu.FizzDutyCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9AA6C3C62EC79CE000673586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FP8RB3BHVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yu.FizzDutyCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FizzDutyCalc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FizzDutyCalc";
+			};
+			name = Debug;
+		};
+		9AA6C3C72EC79CE000673586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FP8RB3BHVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yu.FizzDutyCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FizzDutyCalc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FizzDutyCalc";
+			};
+			name = Release;
+		};
+		9AA6C3C92EC79CE000673586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FP8RB3BHVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yu.FizzDutyCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FizzDutyCalc;
+			};
+			name = Debug;
+		};
+		9AA6C3CA2EC79CE000673586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FP8RB3BHVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yu.FizzDutyCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FizzDutyCalc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AA6C3972EC79CDE00673586 /* Build configuration list for PBXProject "FizzDutyCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA6C3C02EC79CE000673586 /* Debug */,
+				9AA6C3C12EC79CE000673586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AA6C3C22EC79CE000673586 /* Build configuration list for PBXNativeTarget "FizzDutyCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA6C3C32EC79CE000673586 /* Debug */,
+				9AA6C3C42EC79CE000673586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AA6C3C52EC79CE000673586 /* Build configuration list for PBXNativeTarget "FizzDutyCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA6C3C62EC79CE000673586 /* Debug */,
+				9AA6C3C72EC79CE000673586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AA6C3C82EC79CE000673586 /* Build configuration list for PBXNativeTarget "FizzDutyCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA6C3C92EC79CE000673586 /* Debug */,
+				9AA6C3CA2EC79CE000673586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AA6C3942EC79CDE00673586 /* Project object */;
+}
