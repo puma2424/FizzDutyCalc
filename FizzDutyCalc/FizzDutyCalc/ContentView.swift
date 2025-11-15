@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
-
+    @State var showAddView = false
     var body: some View {
         NavigationSplitView {
             VStack {
@@ -73,6 +73,10 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("日本")
+            .sheet(isPresented: $showAddView) {
+                TaxEntryEditorView()
+                    .presentationDetents([.medium, .large])
+            }
         } detail: {
             Text("Select an item")
         }
@@ -80,8 +84,7 @@ struct ContentView: View {
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+            showAddView = true
         }
     }
 
