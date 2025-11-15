@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct TaxEntryEditorView: View {
-    @StateObject var vm = TaxEntryEditorViewModel()
+    @StateObject var vm: TaxEntryEditorViewModel
+
+    init(delegate: TaxEntryEditorViewModel.Delegate? = nil) {
+        _vm = StateObject(
+            wrappedValue: TaxEntryEditorViewModel(delegate: delegate))
+    }
     var body: some View {
         VStack {
             nameView()
             isDutyFreeIncludedView()
             categoryPicker(selection: $vm.dutyRecode.exciseTaxCategory)
             categoryPicker(selection: $vm.dutyRecode.tariffCategory)
-            inputNumberView(title: "容量", value: $vm.dutyRecode.volumeInML, unit: "ml")
-            inputNumberView(title: "酒精濃度", value: $vm.dutyRecode.alcoholPercentage, unit: "%")
+            inputNumberView(
+                title: "容量", value: $vm.dutyRecode.volumeInML, unit: "ml")
+            inputNumberView(
+                title: "酒精濃度", value: $vm.dutyRecode.alcoholPercentage,
+                unit: "%")
             Spacer()
             finishButton()
         }
@@ -95,8 +103,7 @@ struct TaxEntryEditorView: View {
         HStack {
             Text(title)
                 .padding(.trailing)
-                
-            
+
             TextField("請輸入\(title)", value: value, format: .number)
                 .padding()
                 .frame(height: 44)
@@ -109,12 +116,12 @@ struct TaxEntryEditorView: View {
         }
         .frame(maxWidth: .infinity)
     }
-    
+
     @MainActor
     @ViewBuilder
     func finishButton() -> some View {
         Button {
-            
+            vm.finishButtonAction(type: .next)
         } label: {
             Text("下一筆")
                 .foregroundStyle(Color.white)
@@ -134,7 +141,27 @@ struct TaxEntryEditorView: View {
 }
 
 class TaxEntryEditorViewModel: ObservableObject {
+    protocol Delegate: AnyObject {
+        func saveData(model: DutyRecord)
+        func addNew(model: DutyRecord)
+    }
+
     @Published var dutyRecode: DutyRecord = .init()
+    weak var delegate: Delegate?
+
+    init(delegate: Delegate? = nil) {
+        self.delegate = delegate
+    }
+
+    func finishButtonAction(type: FinishAction) {
+        switch type {
+        case .finishEdit:
+            delegate?.saveData(model: dutyRecode)
+        case .next:
+            delegate?.addNew(model: dutyRecode)
+            dutyRecode = .init()
+        }
+    }
 }
 protocol Catrgory: Codable, CaseIterable, Hashable, RawRepresentable
 where RawValue == String {
@@ -178,4 +205,18 @@ struct DutyRecord: Identifiable, Codable {
     var volumeInML: Double = 0
     /// 酒精濃度 (%)
     var alcoholPercentage: Double = 0
+}
+
+enum FinishAction {
+    case finishEdit
+    case next
+
+    var title: String {
+        switch self {
+        case .finishEdit:
+            "完成"
+        case .next:
+            "下一筆"
+        }
+    }
 }

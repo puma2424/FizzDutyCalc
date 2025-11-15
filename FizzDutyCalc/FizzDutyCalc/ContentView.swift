@@ -11,7 +11,9 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
+    @StateObject var vm: ContentViewModel = .init()
     @State var showAddView = false
+    
     var body: some View {
         NavigationSplitView {
             VStack {
@@ -46,8 +48,8 @@ struct ContentView: View {
                 .padding(.horizontal, 12)
 
                 List {
-                    ForEach(items) { item in
-                        Text("\(item)")
+                    ForEach(vm.dutyList) { item in
+                        Text("\(item.name)")
                     }
                     .onDelete(perform: deleteItems)
 
@@ -74,7 +76,7 @@ struct ContentView: View {
             }
             .navigationTitle("日本")
             .sheet(isPresented: $showAddView) {
-                TaxEntryEditorView()
+                TaxEntryEditorView(delegate: vm)
                     .presentationDetents([.medium, .large])
             }
         } detail: {
@@ -91,7 +93,7 @@ struct ContentView: View {
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             for index in offsets {
-                modelContext.delete(items[index])
+                vm.dutyList.remove(at: index)
             }
         }
     }
@@ -100,4 +102,20 @@ struct ContentView: View {
 #Preview {
     ContentView()
         .modelContainer(for: Item.self, inMemory: true)
+}
+
+class ContentViewModel: ObservableObject  {
+    @Published var dutyList: [DutyRecord] = []
+}
+
+extension ContentViewModel: TaxEntryEditorViewModel.Delegate {
+    func saveData(model: DutyRecord) {
+        
+    }
+    
+    func addNew(model: DutyRecord) {
+        dutyList.append(model)
+    }
+    
+    
 }
